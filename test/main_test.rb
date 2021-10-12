@@ -1,11 +1,7 @@
 require_relative '../main'
 require 'minitest/autorun'
-require 'simplecov'
+require 'test_helper'
 
-SimpleCov.start
-
-require 'codecov'
-SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 class MainTest < Minitest::Test
     def test_method_1
