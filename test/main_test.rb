@@ -1,8 +1,8 @@
 require_relative '../main'
-require 'test/unit'
+require 'minitest/autorun'
 
-class MainTest < Test::Unit::TestCase
-    def method_1_test
-        assert_equal('ho', method_1)
+class MainTest < Minitest::Test
+    def test_method_1
+        assert_equal('hi', method_1)
     end
 end
