@@ -6,4 +6,4 @@ gem "json", "2.2.0"
 gem 'codecov', :require => false, :group => :test
 gem 'minitest'
 gem 'simplecov', require: false, group: :test
-gem 'simplecov_json_formatter'
+gem 'simplecov-cobertura'
