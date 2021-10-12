@@ -16,21 +16,12 @@ jobs:
           ruby-version: 2.6
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - run: bundle exec rake
-  coverage:
-    strategy:
-      fail-fast: false
-      matrix:
-        gemfile: [ Gemfile ]
-    runs-on: ubuntu-latest
-    env: # $BUNDLE_GEMFILE must be set at the job level, so it is set for all steps
-      BUNDLE_GEMFILE: ${{ github.workspace }}/gemfiles/${{ matrix.gemfile }}.gemfile
-    steps:
-    - uses: actions/checkout@master
-    - uses: codecov/codecov-action@v2
+      - uses: codecov/codecov-action@v2
       with:
         token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-        files: ./coverage/coverage.json # optional
+        files: coverage.json # optional
         flags: unittests # optional
         name: codecov-umbrella # optional
         fail_ci_if_error: true # optional (default = false)
         verbose: true # optional (default = false)
+    
