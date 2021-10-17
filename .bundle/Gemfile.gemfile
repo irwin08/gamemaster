@@ -7,3 +7,6 @@ gem 'codecov', :require => false, :group => :test
 gem 'minitest'
 gem 'simplecov', require: false, group: :test
 gem 'simplecov-cobertura'
+gem 'solargraph'
+
+gem 'discordrb'

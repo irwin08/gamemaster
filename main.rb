@@ -1,4 +1,4 @@
 
-def method_1
-    return 'hi'
-end
+require 'discordrb'
+
+bot = Discordrb::Bot.new token: 'BOT TOKEN HERE'
