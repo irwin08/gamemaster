@@ -40,6 +40,8 @@ build-iPhoneSimulator/
 
 ## Environment normalization:
 ##/.bundle/
+/.bundle/.yardoc/
+/.bundle/doc/
 /vendor/bundle
 /lib/bundler/man/
 
