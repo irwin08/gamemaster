@@ -1,5 +1,5 @@
 require 'test_helper'
-require_relative '../main'
+#require_relative '../main'
 
 class MainTest < Minitest::Test
     def test_method_1
